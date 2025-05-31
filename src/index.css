@@ -16,6 +16,9 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-slate: var(--slate);
+  --color-light-slate: var(--light-slate);
+  --color-dark-slate: var(--dark-slate);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -49,8 +52,11 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(70.4% 0.04 256.788);
   --primary-foreground: oklch(0.985 0 0);
+  --slate: oklch(0.5049 0.04 256.788);
+  --light-slate: oklch(070.4% 0.04 256.788);
+  --dark-slate: oklch(0.4062 0.04 256.788);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -116,5 +122,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  html {
+    font-family: "Lexend", sans-serif;
   }
 }
