@@ -21,6 +21,21 @@ const introChildren = {
   },
 };
 
+const kidsImg = {
+  hidden: { y: 0 },
+  show: {
+    y: 20,
+    transition: {
+      y: {
+        duration: 2,
+        repeat: Infinity,
+        repeatType: "reverse",
+        ease: "easeInOut",
+      },
+    },
+  },
+};
+
 const HeroSection = () => {
   return (
     <Container className="h-[calc(100vh-64px)] grid grid-cols-1 lg:grid-cols-2 place-content-center">
@@ -49,13 +64,18 @@ const HeroSection = () => {
           <Button>Book a service</Button>
         </motion.div>
       </motion.div>
-      <div className="flex items-center justify-center ">
+      <motion.div
+        className="flex items-center justify-center mt-6 lg:mt-0"
+        variants={kidsImg}
+        initial="hidden"
+        animate="show"
+      >
         <img
           className="lg:w-[350px] -rotate-[30deg]"
           src={kidCollections}
           alt=""
         />
-      </div>
+      </motion.div>
     </Container>
   );
 };
