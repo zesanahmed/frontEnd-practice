@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import BabyFashion from "@/components/newArrivalTiles/BabyFashion";
 
 const NewArrivalSection = () => {
   return (
@@ -8,7 +9,7 @@ const NewArrivalSection = () => {
         <p>Build up wonderful wardrobes for your little angels.</p>
       </div>
       <div className="grid grid-cols-12 gap-5 mt-10">
-        <div className="bg-slate h-[415px] rounded-md col-span-12"></div>
+        <BabyFashion />
         <div className="bg-slate h-[415px] rounded-md col-span-6 lg:col-span-5"></div>
         <div className="bg-slate h-[415px] rounded-md col-span-6 lg:col-span-7"></div>
         <div className="bg-slate h-[415px] rounded-md col-span-12"></div>
