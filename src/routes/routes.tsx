@@ -6,7 +6,7 @@ import CollectionList from "@/pages/admin/CollectionList";
 import Dashboard from "@/pages/admin/Dashboard";
 import Home from "@/pages/home";
 
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +29,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <Navigate to="/admin/dashboard" replace />,
+      },
+      {
+        path: "dashboard",
         element: <Dashboard />,
       },
       {
